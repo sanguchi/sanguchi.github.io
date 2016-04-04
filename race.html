@@ -1,0 +1,53 @@
+<html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ <title>Entidades.push(this);</title>
+ 
+</head>
+<body>
+   
+<style type='text/css'>
+ body {
+ background-color: silver
+ }
+ #race {
+ background-color: #739858
+ }
+</style>
+
+<div>
+ <b>Brick Game (Race Game) 0.1</b>
+</div>
+
+<div style="float:left;">
+ <canvas id="race" width="110" height="220"></canvas>
+ <br/>
+ <button id="start" onclick="start()">
+ Start
+ </button>
+ <button id="stop" onclick="stop()" disabled="">
+ Stop
+ </button>
+</div>
+
+<div>
+ Keys:
+ <br />
+ A - D / Arrows : Move.
+ <br/>
+ W / Space : Speed Up.
+ <br />
+ Score: <span id="cars" style="color:white;">0</span>
+ <br/>
+ Lives: <span id="lives" style="color:white;">0</span>
+ <br/>
+ Level: <span id="level" style="color:white;">0</span>
+ <br/>
+ <i><b>Max. Score : 250.</b> </i>
+</div>
+
+<script type='text/javascript' src="/race.js"></script>
+   
+</body>
+ 
+</html>

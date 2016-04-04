@@ -1,0 +1,74 @@
+<html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ <title>clearInterval(clock);</title>
+ 
+</head>
+<body>
+   
+<style type="text/css">
+div
+{
+ overflow: hidden;
+}
+canvas 
+{
+ background-color: black
+}
+#red {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ -webkit-filter: opacity(0.8);
+}
+#blue {
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+ margin-left: 10px;
+ -webkit-filter: opacity(0.8);
+}
+#green {
+ width: 100px;
+ height: 100px;
+ background-color: green;
+ margin-top: 10px;
+ margin-left: 10px;
+ -webkit-filter: opacity(0.8);
+}
+#yellow {
+ width: 100px;
+ height: 100px;
+ background-color: yellow;
+ margin-top: 10px;
+ -webkit-filter: opacity(0.8);
+}
+#red:hover, #blue:hover, #yellow:hover, #green:hover {
+ -webkit-filter: opacity(0.5)
+}
+</style>
+
+<b>Juego de la Memoria.</b>
+<div style="display:block">
+ <div id ="red" style="float:left;"></div>
+ <div id ="blue"style="float:left;"></div>
+ <div style="float:left;">
+ <i>Tienes que seguir la <b>secuencia</b> de colores.</i><br/>
+ Puntos: <span id="score" style="color:white;">0</span> <br/>
+ <b><span id="turno" style="display: none;color:white">Tu Turno. </span></b>
+ </div>
+</div>
+<div style="display:block">
+ <div id ="yellow"style="float:left;"></div>
+ <div id ="green"style="float:left;"></div>
+</div>
+
+<button id="start" onclick="start()">Start</button>
+<button disabled="disabled" id="reset" onclick="stop()">Reset</button>
+
+<script type='text/javascript' src='/simon.js'></script>
+
+   
+</body>
+ 
+</html>
