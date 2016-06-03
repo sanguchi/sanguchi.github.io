@@ -1,5 +1,5 @@
 /**
- * @author SevenDemons.
+ * @author Sanguchi.
  */
 
 //Declaracion de variables globales.
