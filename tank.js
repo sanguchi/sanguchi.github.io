@@ -166,7 +166,7 @@ Tank.prototype.draw = function()
 	{
 		for (var i = 0; i < this.pix.length; i++)
 		{
-			this.pix[i].draw("black");
+			this.pix[i].draw("#24392A");
 		}
 	}
 	this.check();
@@ -258,8 +258,8 @@ function Shot(xa, ya, d, own)
 	this.x = xa;
 	this.y = ya;
 	this.dir = d;
-	this.iColor = "#739858";
-	this.c = "white";
+	this.iColor = "#24392A";
+	this.c = " #24392A";
 	entidades.push(this);
 	this.from = own || null;
 }
@@ -352,6 +352,11 @@ function Pixel(xa, ya, c)
 
 Pixel.prototype.draw = function(c)
 {
+	// shadow
+	pen.fillStyle = "#6D9851";
+	pen.fillRect(this.x + 2, this.y + 2, 10, 10);
+	pen.fillRect(this.x + 3, this.y + 3, 8, 8);
+	pen.fillRect(this.x + 4, this.y + 4, 6, 6);
 	if (c != null)
 		this.color = c;
 	pen.fillStyle = this.color;
@@ -569,7 +574,7 @@ function draw()
 {
 	if (canvas.getContext)
 	{
-		pen.fillStyle = "rgba(115, 152, 88, 0.9)";
+		pen.fillStyle = "#89AD6F";
 		pen.fillRect(0, 0, 110, 220);
 		var px = entidades.length;
 		for (var i = 0; i < px; i++)
